@@ -1,0 +1,23 @@
+1. Inastall python
+https://www.python.org/downloads/
+2. Install mongobd community server
+https://www.mongodb/try/download/community
+3. Install Pycharm community version
+https://jetbrains.com/pycharm/download/#section=windows
+4. Download and install git bash
+https://git-scm.com/downloads
+5. Create a git repository in your github account
+6. Clone the created git repo using below git bash command in your local computer on a given folder
+git clone https://github.com/camilosanz/fastapi-mongodb-crudapp.git
+7. Open the local source code folder in Pycharm from open File->Open
+8. Open terminal in pycharm and install below packages by running below command
+pip install pymongo fastapi uvicorn
+9. create main.py with code :
+#Import statements
+from fastapi import FastAPI
+
+#Create app
+app = FastAPI()
+10. Run command python -m uvicorn main:app --reload open url http://127.0.0.1:8000/docs from the console
+
+
